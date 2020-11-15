@@ -3,6 +3,8 @@ Physio
 How to run the application
 ===========================
 
+0. git clone, npm i
+
 1. Start the emulator: C:\Android\emulator>emulator -avd Pixel_API_28_AOSP 
 
 2. To start Metro, run npx react-native start.
