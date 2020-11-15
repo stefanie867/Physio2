@@ -34,7 +34,7 @@ const MyCard = () => {
 			</Text>
 			<Button
 				buttonStyle={styles.button}
-				title={t('click')}
+				title={t('click.me')}
 				onPress={changeLanguage} />
 		</Card>
 	);

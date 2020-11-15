@@ -19,7 +19,9 @@ i18n
     lng: 'en',
     fallbackLng: 'en',
     debug: true,
-    resources
+    resources,
+    nsSeparator: ':::',
+    keySeparator: '::'
   });
 
 
