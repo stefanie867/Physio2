@@ -46,7 +46,8 @@
       "!**/.eslintrc.js",
       "!**/.prettierrc.js",
       "!**/metro.config.js",
-      "!**/e2e/**"
+      "!**/e2e/**",
+      "!**/index.js"
     ],
     "setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"]
   }
