@@ -10,13 +10,9 @@ import { Card, Button } from 'react-native-elements';
 
 import { PHOTO } from '../images';
 
-import i18n from '../../i18n';
-import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
-const changeLanguage = () => {
-  i18next.language === 'de' ? i18n.changeLanguage('en') : i18n.changeLanguage('de');
-};
+import {changeLanguage} from './util';
 
 const MyCard = () => {
 	const {t} = useTranslation();
@@ -25,6 +21,7 @@ const MyCard = () => {
 			<Card.Title>{t('title')}</Card.Title>
 			<Card.Divider/>
 			<Image
+				testID='image'
 				style={styles.image}
 				resizeMode="cover"
 				source={PHOTO}
