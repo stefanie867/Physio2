@@ -10,7 +10,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "i18next": "^19.8.3",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-http-backend": "^1.0.21",
     "react": "16.13.1",
+    "react-i18next": "^11.7.3",
     "react-native": "0.63.3",
     "react-native-elements": "^3.0.0-alpha.1",
     "react-native-vector-icons": "^7.1.0"

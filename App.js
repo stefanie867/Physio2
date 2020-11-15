@@ -22,6 +22,8 @@ import {
 
 import Card from './src/components/Card';
 
+import './i18n';
+
 const App = () => {
   return (
     <>

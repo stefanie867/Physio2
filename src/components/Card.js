@@ -8,12 +8,21 @@ import {
 
 import { Card, Button } from 'react-native-elements';
 
-import { PHOTO } from '..images/images';
+import { PHOTO } from '../images';
+
+import i18n from '../../i18n';
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
+
+const changeLanguage = () => {
+  i18next.language === 'de' ? i18n.changeLanguage('en') : i18n.changeLanguage('de');
+};
 
 const MyCard = () => {
+	const {t} = useTranslation();
 	return (
 		<Card>
-			<Card.Title>Exercise</Card.Title>
+			<Card.Title>{t('title')}</Card.Title>
 			<Card.Divider/>
 			<Image
 				style={styles.image}
@@ -21,11 +30,12 @@ const MyCard = () => {
 				source={PHOTO}
 			/>
 			<Text style={styles.text}>
-				Here comes the description of the exercise.
+				{t('description')}
 			</Text>
 			<Button
 				buttonStyle={styles.button}
-				title='Click me' />
+				title={t('click')}
+				onPress={changeLanguage} />
 		</Card>
 	);
 };
